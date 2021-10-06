@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingFragment"
+        android:title="Setting"
+        android:menuCategory="secondary"
+        app:showAsAction="never"/>
+
+    <!--   total code for local purpose -->
+<!--    <item-->
+<!--        android:id="@+id/aboutFragment"-->
+<!--        android:title="About"-->
+<!--        android:icon="@drawable/ic_info"-->
+<!--        app:showAsAction="always"/>-->
+
+<!--    for globle purpose and remaining code in main activity-->
+    <item
+        android:id="@+id/about_frag"
+        android:title="About"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="always"/>
+</menu>
