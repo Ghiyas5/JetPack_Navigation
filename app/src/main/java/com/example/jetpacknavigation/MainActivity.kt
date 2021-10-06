@@ -7,10 +7,7 @@ import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.NavHost
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.onNavDestinationSelected
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +37,8 @@ class MainActivity : AppCompatActivity() {
 
     // alternate of 1 line
     override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
+        // here appBarConfiguration assign for open and close navigation drawr on icon click
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
     // through menu move next secreen
