@@ -45,12 +45,14 @@
         android:id="@+id/viewTransactionFragment"
         android:name="com.example.jetpacknavigation.ViewTransactionFragment"
         android:label="View_Transaction"
-        tools:layout="@layout/fragment_view_transaction" >
+        tools:layout="@layout/fragment_view_transaction">
 
         <argument
             android:name="myArg"
-            app:argType="string"
-             />
+            app:argType="string" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.navcomponent.com/{myArg}" />
     </fragment>
     <fragment
         android:id="@+id/chooseReceiverFragment"
